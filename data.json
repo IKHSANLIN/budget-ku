@@ -1,0 +1,50 @@
+[
+  {
+    "nama_budget": "Makan & minum",
+    "total": 100000,
+    "pengeluaran": [
+      {
+        "nama_pengerluaran": "Nasi Padang",
+        "tanggal": "2022-06-09",
+        "Jumlah": 12000
+      },
+      {
+        "nama_pengerluaran": "Ayam Goreng",
+        "tanggal": "2022-06-09",
+        "Jumlah": 20000
+      },
+      {
+        "nama_pengerluaran": "Mie Ayam",
+        "tanggal": "2022-06-09",
+        "Jumlah": 10000
+      }
+    ]
+  },
+  {
+    "nama_budget": "Transportasi",
+    "total": 200000,
+    "pengeluaran": [
+      {
+        "nama_pengerluaran": "Bus",
+        "tanggal": "2022-06-09",
+        "Jumlah": 10000
+      },
+      {
+        "nama_pengerluaran": "Taxi",
+        "tanggal": "2022-06-09",
+        "Jumlah": 5000
+      }
+    ]
+  },
+  {
+    "nama_budget": "Investasi",
+    "total": 500000,
+    "pengeluaran": [
+      {
+        "nama_pengerluaran": "Sukuk",
+        "tanggal": "2022-06-09",
+        "Jumlah": 500000
+      }
+    ]
+  }
+]

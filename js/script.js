@@ -42,4 +42,37 @@ closeSpentForm.addEventListener("click", () => {
   spentForm.classList.add("hidden");
 });
 
-// modal
+function getFromValue(FormData) {
+  let result = new Object();
+  for (const data of FormData.entries()) {
+    const [key, value] = data;
+    Object.assign(result, { [key]: value });
+  }
+  return result;
+}
+function getExistingData() {
+  return JSON.parse(localStorage.getItem("budget")) ?? [];
+}
+function saveDataBudget(dataBaru) {
+  const existingData = getExistingData();
+  existingData.push(dataBaru);
+
+  console.log("existing", existingData);
+  localStorage.setItem("budget", JSON.stringify(existingData));
+}
+
+// Submit Form budget
+document.querySelector("#budget_form form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = getFromValue(new FormData(e.target));
+
+  saveDataBudget(data);
+  budgetForm.classList.add("hidden");
+  resetInput();
+});
+
+function resetInput() {
+  document.querySelectorAll("form input").forEach((input) => {
+    input.value = "";
+  });
+}
